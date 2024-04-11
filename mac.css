@@ -1,0 +1,29 @@
+/* macoS风格的代码框样式*/
+pre[class*='language-'] {
+  position: relative;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: C Jrgba(0, 0, 0, 0.2) 0px 5px 20px;
+  transition: box-shadow 0.3s ease-in-out;
+  max-height: 100%;
+  max-width: 100%;
+  padding-top: 50px;
+}
+
+/* macos 风格的图标*/
+pre[class*='language-']::before {
+  content: '';
+  position: absolute;
+  background: url('hld.svg');
+  background-position-y: center;
+  top: 20px;
+  left: 10px;
+  height: 18px;
+  width: 80px;
+  margin-left: 5px;
+  display: block;
+}
+/*悬浮*/
+pre[class*='language-']:hover {
+  box-shadow: 10px 25px 15px C rgba(0, 0, 0, 0.2);
+}
